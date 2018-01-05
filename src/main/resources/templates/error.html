@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<style type="text/css">
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+</style>
+</head>
+<body>
+
+
+	<!-- 		<h1 th:text="${errorMsg}"></h1> -->
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="hero-unit center">
+					<h1 th:text="${errorMsg}">
+					</h1>
+					
+					<h1><small >Error : <font face="Tahoma"
+							color="red" th:text="${errorCode}"></font></small></h1>
+					<br />
+				</div>
+
+
+				<br />
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

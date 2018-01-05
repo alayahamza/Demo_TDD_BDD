@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="../../js/jquery-2.0.3.min.js"></script>
+<script src="../../js/angular.js"></script>
+<script src="../../js/angular-datatables.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/jquery.dataTables.min.js"></script>
+<script src="../../js/angular-ui-router.min.js"></script>
+<script src="../../js/angular-route.min.js"></script>
+
+<script src="../layout/app.js"></script>
+<script src="../layout/appIndexController.js"></script>
+<script src="../layout/appIndexService.js"></script>
+
+<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body ng-app="App" ng-controller="AppIndexCntrl" ng-cloak>
+	<h3>TDD BDD Example</h3>
+	<hr>
+	<div class="col-xs-1"></div>
+	<div class="col-xs-4">
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="user in users">
+					<td>{{user.name}}</td>
+					<td>{{user.email}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<div class="col-xs-5"></div>
+</body>
+</html>
